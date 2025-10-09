@@ -12,6 +12,7 @@ export default function Home() {
           width={180}
           height={65}
           priority
+          unoptimized
         />
         <h1>Electric Rides, Coming Soon</h1>
         <p>

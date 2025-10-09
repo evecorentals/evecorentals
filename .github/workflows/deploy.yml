@@ -5,6 +5,10 @@ on:
     branches:
       - main # Trigger on PR merge to main
 
+permissions:
+  pages: write # required for deploy-pages
+  id-token: write # required for configure-pages
+
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -2,15 +2,12 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const ASSET_PREFIX =
-    process.env.NODE_ENV === "production" ? "/evecorentals" : "";
-
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src={`${ASSET_PREFIX}/logo.png`}
+          src="/logo.png"
           alt="EV ECO Rentals logo"
           width={180}
           height={65}

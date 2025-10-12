@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const wa = "https://wa.me/919866277630";
+  const wa = "https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter.";
   const [open, setOpen] = useState(false);
 
   return (

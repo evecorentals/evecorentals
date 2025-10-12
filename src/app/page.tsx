@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export default function Page() {
-  const wa = "https://wa.me/919866277630";
+  const wa = "https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter.";
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function Page() {
                 Vida VX2 Plus and Ather Rizta.
               </p>
               <a
-                href="https://wa.me/919866277630"
+                href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-block bg-white text-green-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
@@ -63,7 +63,6 @@ export default function Page() {
           </div>
         </section>
 
-
       {/* RENTALS */}
       <section id="rentals" className="bg-white text-gray-900">
         <div className="max-w-7xl mx-auto px-6 py-20">
@@ -74,47 +73,53 @@ export default function Page() {
                 name: "Vida VX2 Plus",
                 img: "/vida.png",
                 desc: "Comfortable city scooter with great range and smooth ride.",
+                msg: "Hi EvEco Rentals 👋, I'm interested in booking the Vida VX2 Plus.",
               },
               {
                 name: "Ather Rizta",
                 img: "/ather.png",
                 desc: "High-performance EV built for speed, safety, and comfort.",
+                msg: "Hi EvEco Rentals 👋, I'm interested in booking the Ather Rizta.",
               },
-            ].map((scooter) => (
-              <div
-                key={scooter.name}
-                className="p-6 border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition"
-              >
-                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-                  <div className="relative w-36 h-24">
-                    <Image
-                      src={scooter.img}
-                      alt={scooter.name}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="text-center sm:text-left">
-                    <h4 className="text-xl font-semibold">{scooter.name}</h4>
-                    <p className="text-gray-600 text-sm mt-1">{scooter.desc}</p>
-                    <div className="mt-3 text-green-600 font-bold">
-                      Weekly: ₹2200*
+            ].map((scooter) => {
+              const waMessage = `${wa}?text=${encodeURIComponent(scooter.msg)}`;
+              return (
+                <div
+                  key={scooter.name}
+                  className="p-6 border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition"
+                >
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                    <div className="relative w-36 h-24">
+                      <Image
+                        src={scooter.img}
+                        alt={scooter.name}
+                        fill
+                        className="object-contain"
+                      />
                     </div>
-                    <a
-                      href={wa}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-3 inline-block bg-green-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-700 transition"
-                    >
-                      Book
-                    </a>
+                    <div className="text-center sm:text-left">
+                      <h4 className="text-xl font-semibold">{scooter.name}</h4>
+                      <p className="text-gray-600 text-sm mt-1">{scooter.desc}</p>
+                      <div className="mt-3 text-green-600 font-bold">
+                        Weekly: ₹2200*
+                      </div>
+                      <a
+                        href={waMessage}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-3 inline-block bg-green-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-700 transition"
+                      >
+                        Book on WhatsApp
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
+
 
       {/* ABOUT */}
       <section id="about" className="bg-gray-50 text-gray-800">

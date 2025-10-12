@@ -4,16 +4,30 @@ import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+
 export default function Page() {
   const wa = "https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter.";
 
   return (
     <>
       <Header />
-      {/* HERO */}
+      {/* LAUNCHING SOON SECTION */}
+      <section className="relative z-40 mt-[68px] w-full bg-gradient-to-r from-black via-gray-900 to-gray-800 text-yellow-400 text-center py-3 shadow-lg">
+        <p className="text-base md:text-lg font-semibold tracking-wide px-3">
+          <span className="text-2xl md:text-3xl animate-bounce">🛵</span> <span className="font-bold">EvEco Rentals</span> - <span className="text-white" >Launching Soon in Hyderabad! </span>⚡
+        </p>
+        <p className="text-sm md:text-base text-gray-300 mt-1">
+          Smooth • Affordable • Eco Rides
+        </p>
+      <p className="text-xs md:text-sm text-green-400 font-medium uppercase tracking-wide">
+            🎉 Get exclusive launch offers for our first few customers! ⚡
+          </p>
+      </section>
+
+      {/* HERO  ADD mt-20 class after launch of application*/}
         <section
           id="home"
-          className="w-full bg-gradient-to-r from-green-600 to-green-500 text-white mt-20"
+          className="w-full bg-gradient-to-r from-green-600 to-green-500 text-white "
         >
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center px-6 py-24">
             {/* Left Text Content */}
@@ -23,15 +37,17 @@ export default function Page() {
               </h1>
               <p className="mt-6 text-lg text-white/90">
                 Go electric, save money, and help the planet with our latest models —
-                Vida VX2 Plus and Ather Rizta.
+                Ather Rizta and Vida VX2 Plus.
               </p>
               <a
                 href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."
+                // href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20please%20notify%20me%20when%20you%20launch!"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-block bg-white text-green-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
               >
                 Book on WhatsApp
+                {/* Notify Me On WhatsApp */}
               </a>
             </div>
 
@@ -57,7 +73,6 @@ export default function Page() {
                     priority
                   />
                 </div>
-                
               </div>
             </div>
           </div>
@@ -74,12 +89,14 @@ export default function Page() {
                 img: "/vida.png",
                 desc: "Comfortable city scooter with great range and smooth ride.",
                 msg: "Hi EvEco Rentals 👋, I'm interested in booking the Vida VX2 Plus.",
+                price: 2000,
               },
               {
                 name: "Ather Rizta",
                 img: "/ather.png",
                 desc: "High-performance EV built for speed, safety, and comfort.",
                 msg: "Hi EvEco Rentals 👋, I'm interested in booking the Ather Rizta.",
+                price: 2000,
               },
             ].map((scooter) => {
               const waMessage = `${wa}?text=${encodeURIComponent(scooter.msg)}`;
@@ -101,7 +118,7 @@ export default function Page() {
                       <h4 className="text-xl font-semibold">{scooter.name}</h4>
                       <p className="text-gray-600 text-sm mt-1">{scooter.desc}</p>
                       <div className="mt-3 text-green-600 font-bold">
-                        Weekly: ₹2200*
+                        Weekly: ₹{scooter.price}*
                       </div>
                       <a
                         href={waMessage}
@@ -127,7 +144,7 @@ export default function Page() {
           <h2 className="text-3xl font-bold mb-6">About EvEco Rentals</h2>
           <p className="text-lg text-gray-700 max-w-3xl">
             EvEco Rentals provides affordable, reliable electric scooter
-            rentals in Secunderabad. We make clean and sustainable mobility
+            rentals in Hyderabad. We make clean and sustainable mobility
             accessible to everyone — with flexible plans, well-maintained
             scooters, and simple WhatsApp booking.
           </p>
@@ -138,8 +155,10 @@ export default function Page() {
       <section id="contact" className="bg-white text-gray-900">
         <div className="max-w-7xl mx-auto px-6 py-20">
           <h2 className="text-3xl font-bold mb-6">Contact</h2>
+
           <div className="grid md:grid-cols-2 gap-10">
-            <div>
+            {/* Contact Info */}
+            <div className="flex flex-col">
               <p className="text-gray-700">
                 <strong>Phone:</strong>{" "}
                 <a
@@ -149,6 +168,7 @@ export default function Page() {
                   +91 98662 77630
                 </a>
               </p>
+
               <p className="mt-3 text-gray-700">
                 <strong>Email:</strong>{" "}
                 <a
@@ -158,10 +178,11 @@ export default function Page() {
                   evecorentals@gmail.com
                 </a>
               </p>
+
               <p className="mt-3 text-gray-700">
-                <strong>Address:</strong> Tarbund, Secunderabad, Telangana,
-                500009
+                <strong>Address:</strong> Tarbund, Secunderabad, Hyderabad, Telangana, 500009
               </p>
+
               <p className="mt-3 text-gray-700">
                 <strong>Website:</strong>{" "}
                 <a
@@ -173,19 +194,33 @@ export default function Page() {
                   www.evecorental.com
                 </a>
               </p>
+
               <a
-                href={wa}
+                href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition"
+                className="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition w-fit"
               >
                 Chat on WhatsApp
               </a>
             </div>
+
+            {/* Embedded Google Map */}
+            <div className="w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-md border border-gray-100">
+              <iframe
+                title="EvEco Rentals Location"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d336.4110763528599!2d78.48832363591164!3d17.456992726185614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1760270855459!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );

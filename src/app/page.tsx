@@ -85,21 +85,22 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "Vida VX2 Plus",
-                img: "/vida.png",
-                desc: "Comfortable city scooter with great range and smooth ride.",
-                msg: "Hi EvEco Rentals 👋, I'm interested in booking the Vida VX2 Plus.",
-                price: 2000,
-              },
-              {
                 name: "Ather Rizta",
                 img: "/ather.png",
                 desc: "High-performance EV built for speed, safety, and comfort.",
                 msg: "Hi EvEco Rentals 👋, I'm interested in booking the Ather Rizta.",
                 price: 2000,
               },
+              {
+                name: "Vida VX2 Plus",
+                img: "/vida.png",
+                desc: "Comfortable city scooter with great range and smooth ride.",
+                msg: "Hi EvEco Rentals 👋, I'm interested in booking the Vida VX2 Plus.",
+                price: 2000,
+              },
+              
             ].map((scooter) => {
-              const waMessage = `${wa}?text=${encodeURIComponent(scooter.msg)}`;
+              const waMessage = `https://wa.me/919866277630?text=${encodeURIComponent(scooter.msg)}`;
               return (
                 <div
                   key={scooter.name}
@@ -118,7 +119,7 @@ export default function Page() {
                       <h4 className="text-xl font-semibold">{scooter.name}</h4>
                       <p className="text-gray-600 text-sm mt-1">{scooter.desc}</p>
                       <div className="mt-3 text-green-600 font-bold">
-                        Weekly: ₹{scooter.price}*
+                        {/* Weekly: ₹{scooter.price}* */}
                       </div>
                       <a
                         href={waMessage}

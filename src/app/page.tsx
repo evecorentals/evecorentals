@@ -85,18 +85,31 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "Ather Rizta",
+                name: "Ather Rizta S",
                 img: "/ather.png",
                 desc: "High-performance EV built for speed, safety, and comfort.",
                 msg: "Hi EvEco Rentals 👋, I'm interested in booking the Ather Rizta.",
                 price: 2000,
+                batteryCapacity: "2.9 kWh",
+                range: "Upto 100 KM",
+              },
+              {
+                name: "Ather Rizta SHR",
+                img: "/ather.png",
+                desc: "High-performance EV built for speed, safety, and comfort.",
+                msg: "Hi EvEco Rentals 👋, I'm interested in booking the Ather Rizta.",
+                price: 2200,
+                batteryCapacity: "3.7 kWh",
+                range: "Upto 125 KM",
               },
               {
                 name: "Vida VX2 Plus",
                 img: "/vida.png",
                 desc: "Comfortable city scooter with great range and smooth ride.",
                 msg: "Hi EvEco Rentals 👋, I'm interested in booking the Vida VX2 Plus.",
-                price: 2000,
+                price: 2500,
+                batteryCapacity: "3.4 kWh",
+                range: "Upto 100 KM",
               },
               
             ].map((scooter) => {
@@ -118,8 +131,14 @@ export default function Page() {
                     <div className="text-center sm:text-left">
                       <h4 className="text-xl font-semibold">{scooter.name}</h4>
                       <p className="text-gray-600 text-sm mt-1">{scooter.desc}</p>
+                      <p className="mt-1 text-gray-600 font-bold text-sm">
+                        Battery Capacity: ₹{scooter.batteryCapacity}*
+                      </p>
+                      <p className="mt-1 text-gray-600 font-bold text-sm">
+                        True Range: ₹{scooter.range}*
+                      </p>
                       <div className="mt-3 text-green-600 font-bold">
-                        {/* Weekly: ₹{scooter.price}* */}
+                        Weekly: ₹{scooter.price}*
                       </div>
                       <a
                         href={waMessage}
@@ -210,7 +229,7 @@ export default function Page() {
             <div className="w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-md border border-gray-100">
               <iframe
                 title="EvEco Rentals Location"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d336.4110763528599!2d78.48832363591164!3d17.456992726185614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1760270855459!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0554107192443!2d78.4857986734115!3d17.457061800797682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b6ae9ba33cb%3A0x34ec030c0d4feafe!2sEvEco%20Rentals!5e0!3m2!1sen!2sin!4v1760776782760!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

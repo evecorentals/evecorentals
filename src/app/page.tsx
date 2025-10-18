@@ -97,7 +97,7 @@ export default function Page() {
                 name: "Ather Rizta SHR",
                 img: "/ather.png",
                 desc: "High-performance EV built for speed, safety, and comfort.",
-                msg: "Hi EvEco Rentals 👋, I'm interested in booking the Ather Rizta.",
+                msg: "Hi EvEco Rentals 👋, I'm interested in booking the Ather Rizta SHR.",
                 price: 2200,
                 batteryCapacity: "3.7 kWh",
                 range: "Upto 125 KM",

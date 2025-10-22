@@ -135,7 +135,7 @@ export default function Page() {
                         Battery Capacity: ₹{scooter.batteryCapacity}*
                       </p>
                       <p className="mt-1 text-gray-600 font-bold text-sm">
-                        True Range: ₹{scooter.range}*
+                        True Range: {scooter.range}*
                       </p>
                       <div className="mt-3 text-green-600 font-bold">
                         Weekly: ₹{scooter.price}*

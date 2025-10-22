@@ -132,10 +132,10 @@ export default function Page() {
                       <h4 className="text-xl font-semibold">{scooter.name}</h4>
                       <p className="text-gray-600 text-sm mt-1">{scooter.desc}</p>
                       <p className="mt-1 text-gray-600 font-bold text-sm">
-                        Battery Capacity: ₹{scooter.batteryCapacity}*
+                        Battery Capacity: {scooter.batteryCapacity}
                       </p>
                       <p className="mt-1 text-gray-600 font-bold text-sm">
-                        True Range: {scooter.range}*
+                        True Range: {scooter.range}
                       </p>
                       <div className="mt-3 text-green-600 font-bold">
                         Weekly: ₹{scooter.price}*

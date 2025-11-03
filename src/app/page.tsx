@@ -137,9 +137,9 @@ export default function Page() {
                       <p className="mt-1 text-gray-600 font-bold text-sm">
                         True Range: {scooter.range}
                       </p>
-                      <div className="mt-3 text-green-600 font-bold">
+                      {/* <div className="mt-3 text-green-600 font-bold">
                         Weekly: ₹{scooter.price}*
-                      </div>
+                      </div> */}
                       <a
                         href={waMessage}
                         target="_blank"

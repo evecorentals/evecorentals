@@ -14,7 +14,8 @@ export default function Page() {
       {/* LAUNCHING SOON SECTION */}
       <section className="relative z-40 mt-[68px] w-full bg-gradient-to-r from-black via-gray-900 to-gray-800 text-yellow-400 text-center py-3 shadow-lg">
         <p className="text-base md:text-lg font-semibold tracking-wide px-3">
-          <span className="text-2xl md:text-3xl animate-bounce">🛵</span> <span className="font-bold">EvEco Rentals</span> - <span className="text-white" >Launching Soon in Hyderabad! </span>⚡
+          <span className="text-2xl md:text-3xl animate-bounce">🛵</span> <span className="font-bold">EvEco Rentals ⚡</span>
+           {/* - <span className="text-white" >Launching Soon in Hyderabad! </span> */}
         </p>
         <p className="text-sm md:text-base text-gray-300 mt-1">
           Smooth • Affordable • Eco Rides
@@ -37,7 +38,7 @@ export default function Page() {
               </h1>
               <p className="mt-6 text-lg text-white/90">
                 Go electric, save money, and help the planet with our latest models —
-                Ather Rizta and Vida VX2 Plus.
+                Ather Rizta, Vida VX2 Plus and BGuass Oowah Max.
               </p>
               <a
                 href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."

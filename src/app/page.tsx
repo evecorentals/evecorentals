@@ -111,6 +111,15 @@ export default function Page() {
                 batteryCapacity: "3.4 kWh",
                 range: "Upto 100 KM",
               },
+              {
+                name: "BGuass Oowah Max",
+                img: "/Oowah-Max.png",
+                desc: "Comfortable city scooter with great range and smooth ride.",
+                msg: "Hi EvEco Rentals 👋, I'm interested in booking the BGuass Oowah Max.",
+                price: 2200,
+                batteryCapacity: "3 kWh",
+                range: "Upto 125 KM",
+              },
               
             ].map((scooter) => {
               const waMessage = `https://wa.me/919866277630?text=${encodeURIComponent(scooter.msg)}`;
@@ -239,6 +248,23 @@ export default function Page() {
               ></iframe>
             </div>
           </div>
+        </div>
+      </section>
+      {/* TERMS & CONDITIONS */}
+      <section id="terms" className="bg-gray-100 text-gray-800 py-10 mt-10 border-t">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+            📄 Terms & Conditions
+          </h2>
+   
+          <ul className="space-y-3 text-sm leading-relaxed">
+            <li>✅ Valid government ID proof is required at the time of scooter pickup.</li>
+            <li>✅ Security deposit is mandatory and refundable upon safe return of the vehicle.</li>
+            <li>✅ Any damages or traffic challans during the usage period will be the customer’s responsibility.</li>
+            <li>✅ Vehicle must be returned on time to avoid additional charges.</li>
+            <li>✅ Weekly rental rates may vary during special events or high demand periods.</li>
+            <li>✅ EvEco Rentals reserves the right to modify terms at any time.</li>
+          </ul>
         </div>
       </section>
       <Footer />

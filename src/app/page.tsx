@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 
 export default function Page() {
-  const wa = "https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter.";
+  const wa = "https://wa.me/917013777630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter.";
 
   return (
     <>
@@ -41,8 +41,8 @@ export default function Page() {
                 Ather Rizta, Vida VX2 Plus and BGuass Oowah Max.
               </p>
               <a
-                href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."
-                // href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20please%20notify%20me%20when%20you%20launch!"
+                href="https://wa.me/917013777630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."
+                // href="https://wa.me/917013777630?text=Hi%20EvEco%20Rentals%20👋,%20please%20notify%20me%20when%20you%20launch!"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-block bg-white text-green-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
@@ -123,7 +123,7 @@ export default function Page() {
               },
               
             ].map((scooter) => {
-              const waMessage = `https://wa.me/919866277630?text=${encodeURIComponent(scooter.msg)}`;
+              const waMessage = `https://wa.me/917013777630?text=${encodeURIComponent(scooter.msg)}`;
               return (
                 <div
                   key={scooter.name}
@@ -192,10 +192,10 @@ export default function Page() {
               <p className="text-gray-700">
                 <strong>Phone:</strong>{" "}
                 <a
-                  href="tel:+919866277630"
+                  href="tel:+917013777630"
                   className="text-green-600 hover:underline"
                 >
-                  +91 98662 77630
+                  +91 7013777630
                 </a>
               </p>
 
@@ -226,7 +226,7 @@ export default function Page() {
               </p>
 
               <a
-                href="https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."
+                href="https://wa.me/917013777630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter."
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition w-fit"

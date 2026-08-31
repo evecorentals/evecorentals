@@ -4,14 +4,19 @@ on:
   push:
     branches:
       - main # Trigger on PR merge to main
+  workflow_dispatch:
 
 permissions:
+  contents: read
   pages: write # required for deploy-pages
   id-token: write # required for configure-pages
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       # 1. Checkout repo
@@ -45,4 +50,5 @@ jobs:
 
       # 7. Publish to GitHub Pages
       - name: Publish to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

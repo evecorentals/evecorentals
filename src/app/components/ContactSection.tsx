@@ -1,7 +1,7 @@
 "use client";
 
 export default function ContactSection() {
-  const wa = "https://wa.me/919866277630";
+  const wa = "https://wa.me/917013777630";
 
   return (
     <section id="contact" className="bg-white text-gray-900">
@@ -11,7 +11,7 @@ export default function ContactSection() {
           <div>
             <p className="text-gray-700">
               <strong>Phone:</strong>{" "}
-              <a href="tel:+919866277630" className="text-green-600 hover:underline">
+              <a href="tel:+917013777630" className="text-green-600 hover:underline">
                 +91 98662 77630
               </a>
             </p>

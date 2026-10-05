@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 export default function HeroSection() {
-  const wa = "https://wa.me/919866277630";
+  const wa = "https://wa.me/917013777630";
 
   return (
     <section id="home" className="bg-gradient-to-r from-green-600 to-green-500 text-white">

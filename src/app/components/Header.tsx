@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const wa = "https://wa.me/919866277630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter.";
+  const wa = "https://wa.me/917013777630?text=Hi%20EvEco%20Rentals%20👋,%20I%E2%80%99d%20like%20to%20book%20an%20electric%20scooter.";
   const [open, setOpen] = useState(false);
 
   return (
@@ -38,7 +38,7 @@ export default function Header() {
         {/* Right Section */}
         <div className="flex items-center gap-4">
           <a
-            href="tel:+919866277630"
+            href="tel:+917013777630"
             className="text-sm text-slate-600 hidden md:block"
           >
             📞 +91 98662 77630

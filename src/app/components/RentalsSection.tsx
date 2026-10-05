@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 export default function RentalsSection() {
-  const wa = "https://wa.me/919866277630";
+  const wa = "https://wa.me/917013777630";
 
   const scooters = [
     {
